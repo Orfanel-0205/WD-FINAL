@@ -1,0 +1,250 @@
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+.bg-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px; /* Adjusted to maximize full website feel */
+    width: 90%; /* Responsive width */
+}
+
+/* Header styles */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.head .name {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.head .cc-im {
+    margin-left: auto;
+}
+
+.cc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+}
+
+/* Navigation styles */
+.nbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.nbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nbar a:hover {
+    background-color: #555;
+}
+
+.subnav {
+    position: relative;
+}
+
+.subnavbtn {
+    background-color: #444;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subnavbtn:hover {
+    background-color: #555;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.subnav-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.subnav-content a:hover {
+    background-color: #555;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* Main section styles */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.h {
+    flex: 1;
+    padding-right: 20px; /* Adjusted spacing */
+}
+
+.h h1 {
+    font-size: 3rem; /* Larger heading size for impact */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.h h3 {
+    font-size: 1.5rem; /* Adjusted subheading size */
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.h p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.h .socmed {
+    margin-top: 20px;
+}
+
+.h .socmed a {
+    color: #333;
+    font-size: 1.8rem; /* Larger social media icon size */
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.h .socmed a:hover {
+    transform: translateY(-3px);
+}
+
+.h-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.h-img img {
+    max-width: 100%; /* Ensure image responsiveness */
+    max-height: 600px; /* Limit image height */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+.footer .ftext h1 {
+    font-size: 2rem; /* Adjusted footer heading size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .ftext .fc {
+    color: #f5a623;
+}
+
+.footer .fsoc a {
+    color: #fff;
+    font-size: 2rem; /* Larger social media icon size */
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.footer .fsoc a:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .bg-1 {
+        max-width: 95%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subnav {
+        margin-top: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h h1 {
+        font-size: 2.5rem; /* Adjusted size for smaller screens */
+    }
+
+    .h .socmed a {
+        font-size: 1.5rem; /* Smaller size for social media icons */
+    }
+
+    .footer .ftext h1 {
+        font-size: 1.5rem; /* Adjusted footer heading size */
+    }
+
+    .footer .fsoc a {
+        font-size: 1.5rem; /* Smaller size for social media icons */
+    }
+}
