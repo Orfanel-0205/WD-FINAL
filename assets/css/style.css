@@ -1,76 +1,56 @@
-/* Reset and general styling */
-* {
+
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
-    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-1 {
-    background-color: #fff;
+    background-color: #e0e0e0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1200px; /* Adjusted to maximize full website feel */
-    width: 90%; /* Responsive width */
+    height: 100%;
 }
 
-/* Header styles */
+
 .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: #333;
+    padding: 10px 20px;
     color: #fff;
-    border-radius: 10px 10px 0 0;
 }
 
-.head .name {
-    font-size: 2rem;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.custom-menu, .custom-moon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.head .cc-im {
-    margin-left: auto;
-}
-
-.cc {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensure the image maintains aspect ratio */
-}
-
-/* Navigation styles */
 .nbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 0 0 10px 10px;
+    gap: 10%;
 }
 
 .nbar a {
     color: #fff;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    text-decoration:solid;
+    transition: color 0.3s;
 }
 
 .nbar a:hover {
-    background-color: #555;
+    color: #ff6347;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .subnav {
@@ -78,24 +58,20 @@ body {
 }
 
 .subnavbtn {
-    background-color: #444;
-    color: #fff;
-    padding: 8px 15px;
+    background: none;
     border: none;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.subnavbtn:hover {
-    background-color: #555;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
 }
 
 .subnav-content {
     display: none;
     position: absolute;
-    background-color: #444;
+    background-color: #333;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -104,147 +80,151 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .subnav-content a:hover {
-    background-color: #555;
+    background-color: #575757;
 }
 
 .subnav:hover .subnav-content {
     display: block;
 }
 
-/* Main section styles */
+.name {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cc-im {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Home Section Styles */
 .home {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
+    background-color: #fff;
+    gap: 20px;
 }
 
 .h {
-    flex: 1;
-    padding-right: 20px; /* Adjusted spacing */
+    max-width: 600px;
 }
 
 .h h1 {
-    font-size: 3rem; /* Larger heading size for impact */
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 36px;
+    margin: 0 0 10px;
+    animation: fadeInDown 1s;
 }
 
 .h h3 {
-    font-size: 1.5rem; /* Adjusted subheading size */
-    color: #777;
-    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ff6347;
+    margin: 0 0 20px;
 }
 
 .h p {
-    color: #555;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.h .socmed {
-    margin-top: 20px;
+.mul {
+    color: #007bff;
 }
 
-.h .socmed a {
+.socmed a {
+    margin: 0 10px;
     color: #333;
-    font-size: 1.8rem; /* Larger social media icon size */
-    margin-right: 15px;
-    transition: all 0.3s ease;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
-.h .socmed a:hover {
-    transform: translateY(-3px);
-}
-
-.h-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.socmed a:hover {
+    color: #ff6347;
+    animation: hover-spin 0.6s linear;
 }
 
 .h-img img {
-    max-width: 100%; /* Ensure image responsiveness */
-    max-height: 600px; /* Limit image height */
+    width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    animation: fadeInUp 1s;
 }
 
-/* Footer styles */
+/* Footer Styles */
 .footer {
-    text-align: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
-    margin-top: 20px;
+    text-align: center;
 }
 
-.footer .ftext h1 {
-    font-size: 2rem; /* Adjusted footer heading size */
-    font-weight: bold;
-    margin-bottom: 10px;
+.ftext {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.footer .ftext .fc {
-    color: #f5a623;
+.ftext h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
 }
 
-.footer .fsoc a {
-    color: #fff;
-    font-size: 2rem; /* Larger social media icon size */
+.ftext .fsoc a {
     margin: 0 10px;
-    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
-.footer .fsoc a:hover {
-    transform: translateY(-3px);
+.ftext .fsoc a:hover {
+    color: #ff6347;
+    animation: hover-spin 0.6s linear;
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-    .bg-1 {
-        max-width: 95%; /* Adjust for smaller screens */
+.ftext p {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 768px) {
-    .head {
-        flex-direction: column;
-        text-align: center;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-
-    .nbar {
-        flex-direction: column;
-        text-align: center;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .subnav {
-        margin-top: 10px;
+@keyframes hover-spin {
+    from {
+        transform: rotate(0deg);
     }
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .h h1 {
-        font-size: 2.5rem; /* Adjusted size for smaller screens */
-    }
-
-    .h .socmed a {
-        font-size: 1.5rem; /* Smaller size for social media icons */
-    }
-
-    .footer .ftext h1 {
-        font-size: 1.5rem; /* Adjusted footer heading size */
-    }
-
-    .footer .fsoc a {
-        font-size: 1.5rem; /* Smaller size for social media icons */
+    to {
+        transform: rotate(360deg);
     }
 }
