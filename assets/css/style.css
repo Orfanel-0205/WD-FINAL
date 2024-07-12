@@ -53,6 +53,7 @@ body, html {
 }
 
 .subnavbtn {
+    
     background: none;
     border: none;
     color: #fff;
@@ -60,17 +61,20 @@ body, html {
     display: flex;
     align-items: center;
     font-size: 16px;
+    
 }
 
 .subnav-content {
+    gap: 5%;
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
-    z-index: 1;
+    z-index: 4;
 }
 
 .subnav-content a {
+    
     color: #fff;
     padding: 12px 16px;
     text-decoration: none;
@@ -89,7 +93,8 @@ body, html {
 .name {
     font-size: 20px;
     color: #fff;
-    text-decoration: none;
+    text-decoration-color:#067a33;
+    text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
 }
 
 .cc-im {
@@ -180,16 +185,19 @@ body, html {
 }
 
 .ftext {
+
     max-width: 800px;
     margin: 0 auto;
 }
 
 .ftext h1 {
+   
     font-size: 24px;
     margin: 0 0 10px;
 }
 
 .ftext .fsoc a {
+    bottom: 20%;
     margin: 0 10px;
     color: #fff;
     font-size: 24px;
