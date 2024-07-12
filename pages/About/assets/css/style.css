@@ -53,7 +53,6 @@ body, html {
 }
 
 .subnavbtn {
-    
     background: none;
     border: none;
     color: #fff;
@@ -61,7 +60,6 @@ body, html {
     display: flex;
     align-items: center;
     font-size: 16px;
-    
 }
 
 .subnav-content {
@@ -74,7 +72,6 @@ body, html {
 }
 
 .subnav-content a {
-    
     color: #fff;
     padding: 12px 16px;
     text-decoration: none;
@@ -89,4 +86,166 @@ body, html {
 .subnav:hover .subnav-content {
     display: block;
 }
+.name {
+    font-size: 20px;
+    color: #fff;
+    text-decoration-color:#067a33;
+    text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
+}
 
+.cc-im {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.main-content img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #008080;
+    text-shadow: 2px 2px #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #004d4d;
+    transform: scale(1.1);
+}
+.footer {
+    background-color: #004D4D;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+}
+
+.ftext {
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ftext h1 {
+   
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.ftext .fsoc a {
+    bottom: 20%;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.ftext .fsoc a:hover {
+    color: #058525;
+    animation: hover-spin 0.6s linear;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.translate:hover::after {
+    content: attr(data-english);
+    font-weight: bold;
+    color: #14f3d5;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hover-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #067a33, 0 0 10px #f4fdf5, 0 0 15px #cdffea, 0 0 20px #158f70, 0 0 25px #00f56e, 0 0 30px #31f300, 0 0 35px #06d117;
+    }
+    to {
+        text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
+    }
+}
