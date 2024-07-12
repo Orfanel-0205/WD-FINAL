@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menu = document.getElementById('menu');
-    const nbar = document.querySelector('.nbar');
-    menu.addEventListener('click', function() {
-        nbar.classList.toggle('active');
-    });
 
-    const moon = document.getElementById('moon');
-    moon.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-    });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('.footer');
+    const footerPosition = footer.getBoundingClientRect().top;
+
+    function fadeInFooter() {
+        if (footerPosition <= window.innerHeight) {
+            footer.classList.add('in-view');
+            window.removeEventListener('scroll', fadeInFooter);
+        }
+    }
+
+    window.addEventListener('scroll', fadeInFooter);
 });
