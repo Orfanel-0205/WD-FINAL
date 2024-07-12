@@ -113,8 +113,8 @@ body, html {
 }
 
 .main-content img {
-    width: 200px;
-    border-radius: 50%;
+    width: 300px;
+    border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
