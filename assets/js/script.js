@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainImg.addEventListener('mouseover', function() {
         setTimeout(function() {
             mainImg.src = 'assets/img/450590030_393644869917791_4972001812372923820_n.jpg';
-        }, 1); 
+        }, 4); 
     });
 
     mainImg.addEventListener('mouseout', function() {
