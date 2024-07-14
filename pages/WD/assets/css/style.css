@@ -10,7 +10,7 @@ body, html {
 
 .bg-1 {
     
-        background-color: #00FF00;
+        background-color: #818b81;
     
     }
 
@@ -20,14 +20,14 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0F52BA;
+    background-color: #010e20;
     padding: 20px 50px;
 }
 
 .custom-menu, .custom-moon {
     font-size: 24px;
     cursor: pointer;
-    color: #00FF00; 
+    color: #b1c0b1; 
 }
 
 .nbar {
@@ -113,7 +113,7 @@ body, html {
 .projects {
     padding: 50px;
     text-align: center;
-    background-color: #00FF00;
+    background-color: #626d62;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
@@ -254,7 +254,6 @@ color: #2c3e50;
     animation: glow 1.5s infinite alternate;
 }
 .project:hover {
-    
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -281,7 +280,14 @@ color: #2c3e50;
     }
 }
 
-
+@keyframes hover-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes glow {
     from {
@@ -290,18 +296,6 @@ color: #2c3e50;
     to {
         text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
-}
-
-.project:nth-child(1):hover {
-    animation: glow1 1.5s infinite alternate;
-}
-
-.project:nth-child(2):hover {
-    animation: glow2 1.5s infinite alternate;
-}
-
-.project:nth-child(3):hover {
-    animation: glow3 1.5s infinite alternate;
 }
 
 @keyframes glow1 {
@@ -318,13 +312,13 @@ color: #2c3e50;
 
 @keyframes glow2 {
     0% {
-        box-shadow: 0 0 10px #8B4513, 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513;
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
     }
     50% {
-        box-shadow: 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513, 0 0 50px #8B4513;
+        box-shadow: 0 0 20px #4dff4d, 0 0 30px #4dff4d, 0 0 40px #4dff4d, 0 0 50px #4dff4d;
     }
     100% {
-        box-shadow: 0 0 10px #8B4513, 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513;
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
     }
 }
 
@@ -338,4 +332,20 @@ color: #2c3e50;
     100% {
         box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
     }
+}
+
+
+.project:nth-child(1):hover {
+    animation: glow1 1.5s infinite alternate;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.project:nth-child(2):hover {
+    animation: glow2 1.5s infinite alternate;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.project:nth-child(3):hover {
+    animation: glow3 1.5s infinite alternate;
+    background: rgba(0, 0, 255, 0.1);
 }
