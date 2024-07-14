@@ -1,55 +1,51 @@
-body, html {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color:  #696969;;
-    color: #333;
-    min-height: 100vh; 
 }
 
-.bg-1 {
-    
-        background-color: #696969;
-    
-    }
+body {
+    color: #333;
+    line-height: 1.6;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-.head {
-    position: relative;
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#2F4F4F;
-    padding: 20px 50px;
+    padding: 0 20px;
 }
 
-.custom-menu, .custom-moon {
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff; 
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.nbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.nbar a {
+.nav-link {
+    margin-left: 20px;
     color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
     transition: color 0.3s;
 }
 
-.nbar a:hover {
-    color: #06f319;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+.nav-link:hover {
+    color: #f80e0e;
 }
 
 .subnav {
@@ -57,161 +53,167 @@ body, html {
 }
 
 .subnavbtn {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    cursor: pointer;
 }
 
 .subnav-content {
-    gap: 5%;
     display: none;
     position: absolute;
-    background-color: #333;
+    background: #fff;
+    top: 100%;
+    left: 0;
     min-width: 160px;
-    z-index: 4;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
 }
 
 .subnav-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
+    color: #333;
+    padding: 10px;
     display: block;
-    transition: background-color 0.3s;
-}
-
-.subnav-content a:hover {
-    background-color: #575757;
 }
 
 .subnav:hover .subnav-content {
     display: block;
 }
 
-.name {
-    font-size: 20px;
-    color: #fff;
-    text-decoration-color:#067a33;
-    text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
 }
 
-.cc-im {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main {
+    margin-top: 60px;
+    padding: 20px;
 }
 
-.cc {
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-}
-
-.projects {
-    padding: 50px;
+.hero {
     text-align: center;
-    color: ghostwhite;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    padding: 100px 0;
+    background: url('../../assets/img/v915-red-blue_53876-174923.avif') no-repeat center center/cover;
+    color: #050000;
 }
 
-.project-container {
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10px;
     justify-content: center;
+    margin-top: 20px;
 }
 
-.project {
-    background-color: gray;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.photo-frame {
+    flex: 1 1 calc(33.333% - 10px);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    padding: 20px;
-}
-
-.project-icon {
+.photo-frame img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    display: block;
+    transition: transform 0.3s;
 }
 
-.project-info {
-    padding: 20px;
+.photo-frame:hover img {
+    transform: scale(1.1); /* Engaging hover effect */
+    transition: transform 0.6s ease; /* Smoother and longer transition */
 }
 
-.project-info h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-    color: #F5F5F5;
+.photo-frame:hover {
+    transform: translateY(-10px);
 }
 
-.project-info p {
-    font-size: 1em;
-    color: #F5F5F5;
+.photo-frame.zoom img {
+    transform: scale(1.5); /* Zoom in effect on click */
 }
 
 .footer {
-    background-color: #1C1C1C;
+    background: #333;
     color: #fff;
-    padding: 50px 20px;
     text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-.ftext {
-    text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.ftext h1 {
-    font-size: 24px;
-    margin: 0 0 10px;
-    color: #F8F8FF
-}
-
-.ftext .fsoc a {
+.social-icons a {
+    color: #fff;
     margin: 0 10px;
-    color: #F5F5F5; 
-    font-size: 24px;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
-.ftext .fsoc a:hover {
-    color: #058525;
-    animation: hover-spin 0.6s linear;
+.social-icons a:hover {
+    color: #f80e0e;
 }
 
-.ftext p {
-    font-size: 14px;
-    margin: 10px 0 0;
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .photo-frame {
+        flex: 1 1 100%;
+    }
+}
 .translate:hover::after {
     content: attr(data-english);
     font-weight: bold;
     color: #14f3d5;
     animation: glow 1.5s infinite alternate;
-}
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInDown {
@@ -245,6 +247,15 @@ body, html {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes glow {
     from {
         text-shadow: 0 0 5px #067a33, 0 0 10px #f4fdf5, 0 0 15px #cdffea, 0 0 20px #158f70, 0 0 25px #00f56e, 0 0 30px #31f300, 0 0 35px #06d117;
@@ -252,56 +263,4 @@ body, html {
     to {
         text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
-}
-
-@keyframes glow1 {
-    0% {
-        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
-    }
-    50% {
-        box-shadow: 0 0 20px #ff4d4d, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d;
-    }
-    100% {
-        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
-    }
-}
-
-@keyframes glow2 {
-    0% {
-        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
-    }
-    50% {
-        box-shadow: 0 0 20px #4dff4d, 0 0 30px #4dff4d, 0 0 40px #4dff4d, 0 0 50px #4dff4d;
-    }
-    100% {
-        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
-    }
-}
-
-@keyframes glow3 {
-    0% {
-        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
-    }
-    50% {
-        box-shadow: 0 0 20px #4d4dff, 0 0 30px #4d4dff, 0 0 40px #4d4dff, 0 0 50px #4d4dff;
-    }
-    100% {
-        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
-    }
-}
-
-
-.project:nth-child(1):hover {
-    animation: glow1 1.5s infinite alternate;
-    background: rgba(255, 0, 0, 0.1);
-}
-
-.project:nth-child(2):hover {
-    animation: glow2 1.5s infinite alternate;
-    background: rgba(0, 255, 0, 0.1);
-}
-
-.project:nth-child(3):hover {
-    animation: glow3 1.5s infinite alternate;
-    background: rgba(0, 0, 255, 0.1);
 }

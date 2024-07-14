@@ -3,75 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Photography Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="bg-1">
-        <header class="head">
-            <nav class="nbar">
-                <i class='custom-menu' id="menu"></i>
-                <i class='custom-moon' id="moon"></i>
-                <a href="../../index.html" class="click translate" data-english="HOME">家</a>
-                <a href="../../pages/About/index.html" class="translate" data-english="ABOUT ME">私について</a>
-                <div class="subnav">
-                    <a class="subnavbtn translate" href='../../pages/Projects/index.html' data-english="PROJECTS">プロジェクト <i class='fas fa-chevron-down'></i></a>
-                    <div class="subnav-content">
-                        <a href="../../pages/WD/index.html" class="translate" data-english="WEB DESIGNS">ウェブデザイン</a>
-                    </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="nav-logo translate" data-english="HOME">家</a>
+            <a href="/pages/About/index.html" class="nav-link translate" data-english="ABOUT ME">私について</a>
+            <div class="subnav">
+                <a class="subnavbtn translate" href='./pages/Projects/index.html'" data-english="PROJECTS">プロジェクト <i class='fas fa-chevron-down'></i></a>
+                <div class="subnav-content">
+                    <a href="../../pages/WD/index.html" class="translate" data-english="WEB DESIGNS">ウェブデザイン</a>
                 </div>
-                <a href="pages/cont.html" class="translate" data-english="CONTACT">接触</a>
-                <a href="pages/credit.html" class="translate" data-english="References">参考文献</a>
-            </nav>
-
-            <a href="#" class="name">FORDIE</a>
-            <div class="cc-im">
-                <img class="cc" src="assets/img/405968192_3648631238697996_4705364770560099457_n.jpg">
             </div>
-        </header>
-    </div>
-    <main class="projects">
-        <h1>My Projects</h1>
-        <div class="project-container">
-            <div class="project">
-                <a href="https://orfanel-0205.github.io/SeatWork3/" target="_blank">
-                    <img src="./assets/img/pngwing.com (13).png" alt="Project 1" class="project-icon">
-                    <div class="project-info">
-                        <h3>Project 1</h3>
-                        <p>PROJECT TYPE: HEADER & FOOTER</p>
-                    </div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://orfanel-0205.github.io/WD-Intropt.2/" target="_blank">
-                    <img src="./assets/img/pngwing.com (14).png" alt="Project 2" class="project-icon">
-                    <div class="project-info">
-                        <h3>Project 2</h3>
-                        <p>First basic work for IT0043L</p>
-                    </div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://orfanel-0205.github.io/WD-second/" target="_blank">
-                    <img src="./assets/img/pngwing.com (15).png" alt="Project 3" class="project-icon">
-                    <div class="project-info">
-                        <h3>Project 3</h3>
-                        <p>1st Resume project</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+            <a href="./pages/" class="nav-link translate" data-english="CONTACT">接触</a>
+            <a href="./pages/References/" class="nav-link translate" data-english="REFERENCES">参考文献</a>
+            <i class="fas fa-bars nav-toggle" id="nav-toggle"></i>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <h1>MY PROJECTS</h1>
+            <p>Header and footer designs, basic introduction of my personal website, and first seatwork</p>
+        </section>
+        <section class="photo-gallery">
+            <div class="photo-frame"><img src="./assets/img/RES1.jpg" alt="Photo 1"></div>
+            <div class="photo-frame"><img src="./assets/img/res2.jpg" alt="Photo 2"></div>
+            <div class="photo-frame"><img src="./assets/img/res3.jpg" alt="Photo 3"></div>
+            <div class="photo-frame"><img src="./assets/img/REs5.jpg" alt="Photo 4"></div>
+            <div class="photo-frame"><img src="./assets/img/RES6.jpg" alt="Photo 5"></div>
+            <div class="photo-frame"><img src="./assets/img/res8.jpg" alt="Photo 6"></div>
+            <div class="photo-frame"><img src="./assets/img/RES9.jpg" alt="Photo 7"></div>
+        </section>
     </main>
     <footer class="footer">
-        <div class="ftext">
-            <h1>FINAL<span class="fc"> WEB</span> DESIGN <span> PROJECT</span> </h1>
-            <div class="fsoc">
-                <a href="https://www.facebook.com/clifford.orfanel/"><i class="fa-brands fa-facebook hover-spin"></i></a>
-                <a href="https://www.instagram.com/fordaintdead/"><i class="fa-brands fa-instagram hover-spin"></i></a>
-            </div>
-            <p>Disclaimer: The content provided on this platform is intended for educational purposes only.</p>
+        <p>&copy; 2024 PROJECTS SECTION</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
