@@ -3,21 +3,24 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color: #0d0f0f; /* Adjusted to match screenshot */
-    color: #fff; /* Adjusted to white */
+    background-color:  #696969;;
+    color: #333;
     min-height: 100vh; 
 }
 
 .bg-1 {
-    background-color: rgb(102, 102, 102); 
-}
+    
+        background-color: #696969;
+    
+    }
+
 
 .head {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #424242; /* Adjusted to match screenshot */
+    background-color:#2F4F4F;
     padding: 20px 50px;
 }
 
@@ -110,7 +113,8 @@ body, html {
 .projects {
     padding: 50px;
     text-align: center;
-    color: #fff;
+    color: ghostwhite;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .project-container {
@@ -121,12 +125,12 @@ body, html {
 }
 
 .project {
-    background-color: #f9f9f9;
+    background-color: gray;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     width: 300px;
 }
 
@@ -164,13 +168,14 @@ body, html {
 }
 
 .footer {
-    background-color: #424242   ; /* Adjusted to match screenshot */
-    color: #fff; /* Adjusted to white */
+    background-color: #1C1C1C;
+    color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
 
 .ftext {
+    text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -178,12 +183,12 @@ body, html {
 .ftext h1 {
     font-size: 24px;
     margin: 0 0 10px;
-    color: #D81B60; /* Adjusted to match screenshot */
+    color: #F8F8FF
 }
 
 .ftext .fsoc a {
     margin: 0 10px;
-    color: #F5F5F5; /* Adjusted to white */
+    color: #F5F5F5; 
     font-size: 24px;
     transition: color 0.3s;
 }
@@ -203,6 +208,10 @@ body, html {
     font-weight: bold;
     color: #14f3d5;
     animation: glow 1.5s infinite alternate;
+}
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInDown {
@@ -243,4 +252,56 @@ body, html {
     to {
         text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
+}
+
+@keyframes glow1 {
+    0% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff4d4d, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    }
+}
+
+@keyframes glow2 {
+    0% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 20px #4dff4d, 0 0 30px #4dff4d, 0 0 40px #4dff4d, 0 0 50px #4dff4d;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+@keyframes glow3 {
+    0% {
+        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #4d4dff, 0 0 30px #4d4dff, 0 0 40px #4d4dff, 0 0 50px #4d4dff;
+    }
+    100% {
+        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+    }
+}
+
+
+.project:nth-child(1):hover {
+    animation: glow1 1.5s infinite alternate;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.project:nth-child(2):hover {
+    animation: glow2 1.5s infinite alternate;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.project:nth-child(3):hover {
+    animation: glow3 1.5s infinite alternate;
+    background: rgba(0, 0, 255, 0.1);
 }

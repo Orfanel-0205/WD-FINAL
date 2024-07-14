@@ -143,10 +143,11 @@ body, html {
 
 .h h3 {
     font-size: 24px;
-    color: #ff6347;
+    color: #ecee8f;
+    text-shadow: 2px 2px 4px #FFD700;
     margin: 0 0 20px;
     animation: bounce 1s infinite;
-    text-shadow: 2px 2px 4px #FF4500;
+   
 }
 
 .h p {
