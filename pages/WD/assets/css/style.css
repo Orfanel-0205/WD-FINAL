@@ -3,15 +3,17 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color: #4F8FC0;
+    background-color:  #696969;;
     color: #333;
     min-height: 100vh; 
 }
 
 .bg-1 {
-    background-color: #696969;
-    min-height: calc(100vh - 80px); 
-}
+    
+        background-color: #696969;
+    
+    }
+
 
 .head {
     position: relative;
@@ -25,6 +27,7 @@ body, html {
 .custom-menu, .custom-moon {
     font-size: 24px;
     cursor: pointer;
+    color: #fff; 
 }
 
 .nbar {
@@ -54,7 +57,6 @@ body, html {
 }
 
 .subnavbtn {
-    
     background: none;
     border: none;
     color: #fff;
@@ -62,7 +64,6 @@ body, html {
     display: flex;
     align-items: center;
     font-size: 16px;
-    
 }
 
 .subnav-content {
@@ -75,7 +76,6 @@ body, html {
 }
 
 .subnav-content a {
-    
     color: #fff;
     padding: 12px 16px;
     text-decoration: none;
@@ -90,10 +90,7 @@ body, html {
 .subnav:hover .subnav-content {
     display: block;
 }
-.socmed{
-    color: #F8F8FF;
-    text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
-}
+
 .name {
     font-size: 20px;
     color: #fff;
@@ -113,105 +110,87 @@ body, html {
     height: 90px;
 }
 
-.home {
-    margin-top: 18vh;
+.projects {
+    padding: 50px;
+    text-align: center;
+    color: ghostwhite;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.project-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
 }
 
-.h {
-    max-width: 600px;
-}
-
-.h h1 {
-    color: #F8F8FF  ;
-    font-size: 36px;
-    margin: 0 0 10px;
-    animation: bounce 1s infinite;
-    text-shadow:0 0 10px #02cea2, 0 0 10px #08945a, 0 0 10px #43bb9d, 0 0 40px #17bb77, 0 0 10px #8da023, 0 0 10px #adf700, 0 0 10px #fff347; ;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-.h h3 {
-    font-size: 24px;
-    color: #ecee8f;
-    text-shadow: 2px 2px 4px #FFD700;
-    margin: 0 0 20px;
-    animation: bounce 1s infinite;
-   
-}
-
-.h p {
-    color: #F8F8FF  ;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(70, 62, 62, 0.7);
-}
-
-.mul {
-    color: #eff302;
-    text-shadow: 2px 2px 4px #FFD700;
-}
-
-.socmed a {
-    margin: 0 10px;
-    color: #F8F8FF;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.socmed a:hover {
-    color: #21fa05;
-    animation: hover-spin 0.6s linear;
-}
-
-.h-img img {
+.project {
+    background-color: gray;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     width: 300px;
-    border-radius: 50px;
-    transition: transform 0.5s ease-in-out;
 }
 
-.h-img img:hover {
-    transform: scale(1.3) rotateY(360deg);
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.project-icon {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #F5F5F5;
+}
+
+.project-info p {
+    font-size: 1em;
+    color: #F5F5F5;
 }
 
 .footer {
     background-color: #1C1C1C;
     color: #fff;
-    padding: 100px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .ftext {
     text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
- max-width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .ftext h1 {
-    text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
-font-size: 24px;
+    font-size: 24px;
     margin: 0 0 10px;
+    color: #F8F8FF
 }
 
 .ftext .fsoc a {
-    text-shadow: 2px 2px 4px rgba(4, 247, 214, 0.4);
-    bottom: 20%;
     margin: 0 10px;
-    color: #F8F8FF  ;
+    color: #F5F5F5; 
     font-size: 24px;
     transition: color 0.3s;
-    
 }
 
 .ftext .fsoc a:hover {
@@ -229,6 +208,10 @@ font-size: 24px;
     font-weight: bold;
     color: #14f3d5;
     animation: glow 1.5s infinite alternate;
+}
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInDown {
@@ -262,15 +245,6 @@ font-size: 24px;
     }
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 @keyframes glow {
     from {
         text-shadow: 0 0 5px #067a33, 0 0 10px #f4fdf5, 0 0 15px #cdffea, 0 0 20px #158f70, 0 0 25px #00f56e, 0 0 30px #31f300, 0 0 35px #06d117;
@@ -278,4 +252,56 @@ font-size: 24px;
     to {
         text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
+}
+
+@keyframes glow1 {
+    0% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff4d4d, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    }
+}
+
+@keyframes glow2 {
+    0% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 20px #4dff4d, 0 0 30px #4dff4d, 0 0 40px #4dff4d, 0 0 50px #4dff4d;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+@keyframes glow3 {
+    0% {
+        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #4d4dff, 0 0 30px #4d4dff, 0 0 40px #4d4dff, 0 0 50px #4d4dff;
+    }
+    100% {
+        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+    }
+}
+
+
+.project:nth-child(1):hover {
+    animation: glow1 1.5s infinite alternate;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.project:nth-child(2):hover {
+    animation: glow2 1.5s infinite alternate;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.project:nth-child(3):hover {
+    animation: glow3 1.5s infinite alternate;
+    background: rgba(0, 0, 255, 0.1);
 }
