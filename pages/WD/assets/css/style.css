@@ -10,7 +10,7 @@ body, html {
 
 .bg-1 {
     
-        background-color: #696969;
+        background-color: #00FF00;
     
     }
 
@@ -20,14 +20,14 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#2F4F4F;
+    background-color: #0F52BA;
     padding: 20px 50px;
 }
 
 .custom-menu, .custom-moon {
     font-size: 24px;
     cursor: pointer;
-    color: #fff; 
+    color: #00FF00; 
 }
 
 .nbar {
@@ -113,7 +113,7 @@ body, html {
 .projects {
     padding: 50px;
     text-align: center;
-    color: ghostwhite;
+    background-color: #00FF00;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
@@ -125,7 +125,7 @@ body, html {
 }
 
 .project {
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -133,8 +133,11 @@ body, html {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     width: 300px;
 }
+.projects h1{
+color: #2c3e50;
+}
 
-.project:hover {
+.project a:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -166,9 +169,12 @@ body, html {
     font-size: 1em;
     color: #F5F5F5;
 }
+.projects main{
+    background-color: #00FF00;
+}
 
 .Foot3 {
-    background-color: #2c3e50;
+    background-color: #808080;
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -185,6 +191,7 @@ body, html {
 }
 
 .logo3 {
+    color:#FFD700 ;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -247,6 +254,7 @@ body, html {
     animation: glow 1.5s infinite alternate;
 }
 .project:hover {
+    
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -273,14 +281,7 @@ body, html {
     }
 }
 
-@keyframes hover-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 
 @keyframes glow {
     from {
@@ -289,6 +290,18 @@ body, html {
     to {
         text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
+}
+
+.project:nth-child(1):hover {
+    animation: glow1 1.5s infinite alternate;
+}
+
+.project:nth-child(2):hover {
+    animation: glow2 1.5s infinite alternate;
+}
+
+.project:nth-child(3):hover {
+    animation: glow3 1.5s infinite alternate;
 }
 
 @keyframes glow1 {
@@ -305,13 +318,13 @@ body, html {
 
 @keyframes glow2 {
     0% {
-        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+        box-shadow: 0 0 10px #8B4513, 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513;
     }
     50% {
-        box-shadow: 0 0 20px #4dff4d, 0 0 30px #4dff4d, 0 0 40px #4dff4d, 0 0 50px #4dff4d;
+        box-shadow: 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513, 0 0 50px #8B4513;
     }
     100% {
-        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+        box-shadow: 0 0 10px #8B4513, 0 0 20px #8B4513, 0 0 30px #8B4513, 0 0 40px #8B4513;
     }
 }
 
@@ -325,20 +338,4 @@ body, html {
     100% {
         box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
     }
-}
-
-
-.project:nth-child(1):hover {
-    animation: glow1 1.5s infinite alternate;
-    background: rgba(255, 0, 0, 0.1);
-}
-
-.project:nth-child(2):hover {
-    animation: glow2 1.5s infinite alternate;
-    background: rgba(0, 255, 0, 0.1);
-}
-
-.project:nth-child(3):hover {
-    animation: glow3 1.5s infinite alternate;
-    background: rgba(0, 0, 255, 0.1);
 }
