@@ -1,12 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const subnav = document.querySelector('.subnav');
-    const subnavContent = document.querySelector('.subnav-content');
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
 
-    subnav.addEventListener('mouseenter', function() {
-        subnavContent.style.display = 'block';
-    });
-
-    subnav.addEventListener('mouseleave', function() {
-        subnavContent.style.display = 'none';
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
