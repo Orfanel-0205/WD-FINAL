@@ -214,9 +214,10 @@ body {
     width: 100%;
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
+   
 }
 
 .container3 {
@@ -259,4 +260,10 @@ body {
 .links3 a:hover {
     color: #06f319;
     transition: color 0.3s;
+}
+.translate:hover::after {
+  content: attr(data-english);
+  font-weight: bold;
+  color: #14f3d5;
+  animation: glow 1.5s infinite alternate;
 }
