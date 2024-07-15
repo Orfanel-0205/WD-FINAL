@@ -75,7 +75,7 @@ The project is a comprehensive web presence spanning six distinct pages and feat
 https://orfanel-0205.github.io/WD-FINAL/
 ## Links for other Projects
 - HANDS ON 2
-https://github.com/Orfanel-0205/Hands-on-2
+https://github.com/Orfanel-0205/Hands-on-2.git
 - Seatwork 3
 https://github.com/Orfanel-0205/SeatWork3.git
 - Activity 1
