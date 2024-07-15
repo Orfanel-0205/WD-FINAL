@@ -9,18 +9,18 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">WD-FINAL </h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Portfolio type of website with compilation of seatworks, tasks and resume. 
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=Orfanel-0205/WD-FINAL)
 
 ---
 
@@ -59,18 +59,17 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+
+The project is a comprehensive web presence spanning six distinct pages and featuring a cohesive sub-navigation structure with different types of animation. It begins with an "Overview" page, offering detailed mapping and fundamental insights into the project's scope and purpose. The "About Me" section provides a personal introduction, offering visitors a glimpse into the creator's background and motivations. Central to the site is the "Projects" section, which includes a dedicated sub-navigation titled "Web Designs," showcasing various web development ventures and design accomplishments. Additionally, the site includes essential contact information to facilitate communication. Finally, the "References" page serves as a resource hub, linking to reputable platforms such as YouTube, W3Schools, Pinterest, and GitHub, enriching the user experience with valuable external resources and insights.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Hover transition
+- Animations
+- Navigations
+- Diffrent types of designs
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -90,24 +89,72 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-FINAL
 └─ assets
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ fileWith.jpg/.png
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
+|  └─  About
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpg/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Contact
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpg/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─  Overview
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Projects
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpg/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─ References
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Resume
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpg/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─ WD
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
 └─ index.html
 └─ readme.md
 ```
@@ -117,4 +164,8 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| w3schools | To learn animation and transitions. | https://www.w3schools.com/css/default.asp |
+| fontawesome | To get fonts that serves as symbols | https://fontawesome.com |
+|Pinterest|For concepts | https://ph.pinterest.com|
+|pngwing|to get free png images|https://www.pngwing.com|
+|github|for design references|https://www.github.com|
