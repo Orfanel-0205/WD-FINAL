@@ -71,6 +71,25 @@ The project is a comprehensive web presence spanning six distinct pages and feat
 - Navigations
 - Diffrent types of designs
 
+## Deployment Link
+https://orfanel-0205.github.io/WD-FINAL/
+## Links for other Projects
+- HANDS ON 2
+https://github.com/Orfanel-0205/Hands-on-2
+- Seatwork 3
+https://github.com/Orfanel-0205/SeatWork3.git
+- Activity 1
+  https://github.com/Orfanel-0205/WD-Intropt.2.git
+- Seatwork 2
+https://github.com/Orfanel-0205/WD-second.git
+- Midterm Activity
+https://github.com/Orfanel-0205/WD-Midterm.git
+- Seatwork 4
+https://github.com/Orfanel-0205/WD-SeatWork4.git
+
+## Wakatime
+https://wakatime.com/projects/WD-FINAL-9?start=2024-07-09&end=2024-07-15
+
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
