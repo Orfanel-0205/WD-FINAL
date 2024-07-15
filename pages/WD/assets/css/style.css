@@ -125,7 +125,7 @@
 }
 
 .projects h1 {
-    padding-top: 5rem;
+    padding-top: rem;
     color: #33db11;
     margin-bottom: 10rem;
     animation: glow 1.5s infinite alternate;
