@@ -1,19 +1,7 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    background-color:  #696969;;
-    color: #333;
-    min-height: 100vh; 
-}
-
 .bg-1 {
-    
-        background-color: #818b81;
-    
-    }
-
+    background-color: #818b81;
+    min-height: calc(12vh - 80px); 
+}
 
 .head {
     position: relative;
@@ -111,10 +99,12 @@ body, html {
 }
 
 .projects {
-    padding: 50px;
+    
+    padding-bottom: 5rem;
     text-align: center;
     background-color: #626d62;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  
+
 }
 
 .project-container {
@@ -133,8 +123,21 @@ body, html {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     width: 300px;
 }
-.projects h1{
-color: #2c3e50;
+
+.projects h1 {
+    padding-top: 5rem;
+    color: #33db11;
+    margin-bottom: 10rem;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #067a33, 0 0 10px #f4fdf5, 0 0 15px #cdffea, 0 0 20px #158f70, 0 0 25px #00f56e, 0 0 30px #31f300, 0 0 35px #06d117;
+    }
+    to {
+        text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
+    }
 }
 
 .project a:hover {
@@ -169,17 +172,19 @@ color: #2c3e50;
     font-size: 1em;
     color: #F5F5F5;
 }
-.projects main{
+
+.projects main {
     background-color: #00FF00;
 }
 
 .Foot3 {
-    background-color: #808080;
-    color: white;
-    padding: 40px 0;
+    background-color: #444; 
+    color: #010e20;
     text-align: center;
- 
-    top: 100px;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position:fixed ;
 }
 
 .container3 {
@@ -192,7 +197,7 @@ color: #2c3e50;
 }
 
 .logo3 {
-    color:#FFD700 ;
+    color: #FFD700;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -243,17 +248,19 @@ color: #2c3e50;
     .social-item3 {
         font-size: 1.2em;
     }
-    
+
     .links3 a {
         margin: 5px 10px;
     }
 }
+
 .translate:hover::after {
     content: attr(data-english);
     font-weight: bold;
     color: #14f3d5;
     animation: glow 1.5s infinite alternate;
 }
+
 .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -287,15 +294,6 @@ color: #2c3e50;
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #067a33, 0 0 10px #f4fdf5, 0 0 15px #cdffea, 0 0 20px #158f70, 0 0 25px #00f56e, 0 0 30px #31f300, 0 0 35px #06d117;
-    }
-    to {
-        text-shadow: 0 0 10px #02cea2, 0 0 20px #08945a, 0 0 30px #43bb9d, 0 0 40px #17bb77, 0 0 50px #8da023, 0 0 60px #adf700, 0 0 70px #fff347;
     }
 }
 
@@ -335,6 +333,41 @@ color: #2c3e50;
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.project-info {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cc {
+    animation: bounce 2s infinite;
+}
+
+.social-item3:hover {
+    animation: hover-spin 0.5s ease-in-out;
+}
+
+.logo3 {
+    animation: glow1 2s ease-in-out infinite alternate;
+}
+
+.nbar a:hover {
+    animation: glow2 1s ease-in-out;
+}
+
+.head {
+    animation: glow3 1s ease-in-out;
+}
 
 .project:nth-child(1):hover {
     animation: glow1 1.5s infinite alternate;
