@@ -2,18 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
+  
   padding: 0;
+ 
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
 body{
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   background: #c8e8e9;
   display: flex;
-  align-items: center;
+  
   justify-content: center;
 }
+
+
+  .bg-1 {
+    background-color: #696969;
+    min-height: calc(100vh - 80px); 
+    max-width:calc(150vh - 80px);  ;
+}
+
 
 
 .head {
@@ -236,6 +246,126 @@ body{
     color: #14f3d5;
     animation: glow 1.5s infinite alternate;
 }
+.Foot3 {
+  background: linear-gradient(135deg, #1f1c2c 0%, #2d3246 100%);
+  color: #f0f0f0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo3 {
+  font-size: 50px;
+  color: #50d890;
+  animation: pop-in 1s ease-in-out;
+}
+
+@keyframes pop-in {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.social-container3 {
+  display: flex;
+  gap: 15px;
+}
+
+.social-item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #50d890;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.social-item3 i {
+  color: #1f1c2c;
+}
+
+.social-item3:hover {
+  transform: scale(1.3) rotateY(360deg);
+  background-color: #ff6b6b;
+}
+
+.links3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.links3 a {
+  text-decoration: none;
+  color: #50d890;
+  transition: transform 0.3s, color 0.3s;
+  font-size: 14px;
+}
+
+.links3 a:hover {
+  transform: scale(1.1);
+  color: #ff6b6b;
+  text-shadow: 1px 1px 2px black, 0 0 5px #50d890;
+}
+
+.Foot3 p {
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.Foot3::before,
+.Foot3::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  animation: rotate 8s linear infinite;
+  pointer-events: none;
+}
+
+.Foot3::after {
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 
 @keyframes fadeInDown {
     from {

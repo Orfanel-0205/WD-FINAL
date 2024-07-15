@@ -46,7 +46,7 @@ body {
 
 
 main {
-    padding: 120px 20px 20px; /* Increased padding-top to accommodate fixed header */
+    padding: 120px 20px 20px; 
     animation: fadeIn 1s ease-in-out;
     max-width: 1200px;
     margin: 0 auto;
@@ -112,7 +112,7 @@ footer {
     width: 100%;
     border-top: 2px solid #1e90ff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure footer is above content */
+    z-index: 1000; 
 }
 
 @keyframes fadeIn {
