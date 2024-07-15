@@ -1,9 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const resumeBtn = document.querySelector('.resume-btn');
-    resumeBtn.addEventListener('mouseover', () => {
-        resumeBtn.style.transform = 'scale(1.1)';
+document.addEventListener("DOMContentLoaded", function() {
+    const subnav = document.querySelector('.subnav');
+    const subnavContent = document.querySelector('.subnav-content');
+
+    subnav.addEventListener('mouseenter', function() {
+        subnavContent.style.display = 'block';
     });
-    resumeBtn.addEventListener('mouseout', () => {
-        resumeBtn.style.transform = 'scale(1)';
+
+    subnav.addEventListener('mouseleave', function() {
+        subnavContent.style.display = 'none';
     });
 });
